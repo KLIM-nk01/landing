@@ -1,0 +1,338 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+header {
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+}
+
+.header-wrapper {
+    width: 1504px;
+    height: 50px;
+    margin: 40px auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 129px;
+    height: 40px;
+    background-image: url("./assets/Vector.png");
+
+}
+
+
+.nav-wrapper {
+    width: 880px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-menu {
+    width: 565px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-menu > a {
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.75px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+
+.options {
+    width: 240px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.options > a {
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.75px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+
+.options > button {
+    width: 166px;
+    height: 48px;
+    border: 2px solid #FFD703;
+    box-sizing: border-box;
+    border-radius: 50px;
+    background-color: transparent;
+    color: #FFD703;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+.top-wrapper {
+    position: relative;
+    width: 100%;
+    height: 1264px;
+    padding-top: 250px;
+    background-image: url("./assets/bg 1.png");
+}
+
+.overlay-top {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 996px;
+    background: linear-gradient(180deg, #006977 -36.24%, rgba(0, 54, 62, 0) 93.93%);
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.top-first-frame {
+    position: relative;
+    z-index: 2;
+    max-width: 1504px;
+    height: 523px;
+    margin: 0 auto 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.top-first-frame > .text-block {
+    width: 910px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.text-block > h1 {
+    margin: 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 106px;
+    line-height: 130%;
+    color: #F4F4F4;
+}
+
+.text-block > p {
+    width: 697px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: #CEFFFD;
+    letter-spacing: 0.1px;
+    margin: 24px 0 72px;
+}
+
+.text-block > button {
+    width: 299px;
+    height: 79px;
+    background: #FFD703;
+    border-radius: 50px;
+    border: none;
+}
+
+.top-first-frame > .play-block {
+    width: 594px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.subtract {
+    width: 134px;
+    height: 134px;
+    background-image: url("./assets/Subtract.png");
+    background-size: 100%;
+    margin-left: 95px;
+    cursor: pointer;
+
+}
+
+
+.subtract:after {
+    content: '';
+    position: absolute;
+    top: 103px;
+    right: 90px;
+    width: 313px;
+    height: 313px;
+    border: 2px solid #ffffff;
+    opacity: 0.2;
+    border-radius: 50%;
+}
+
+.subtract:before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    width: 497px;
+    height: 497px;
+    border: 2px solid #ffffff;
+    opacity: 0.2;
+    border-radius: 50%;
+}
+
+.subtract:hover {
+    width: 140px;
+    height: 140px;
+
+}
+
+.top-second-frame {
+    position: relative;
+    z-index: 2;
+    width: 1504px;
+    height: 430px;
+    margin: 160px auto 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.top-second-frame > h2 {
+    margin: 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 90px;
+    color: #F4F4F4;
+}
+
+.item-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 308px;
+}
+
+.item {
+    width: 415px;
+    height: 245px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 16px;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+
+    color: #F4F4F4;
+    padding: 32px;
+
+}
+
+.item > h3 {
+    font-size: 40px;
+    line-height: 60px;
+    letter-spacing: 0.25px;
+    margin: 8px 0 10px;
+}
+
+.item > p {
+    width: 416px;
+    height: 72px;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    margin: 0;
+}
+
+.overlay-bottom {
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 822px;
+    background: linear-gradient(180deg, #006977 -36.24%, rgba(0, 54, 62, 0) 93.93%);
+    transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+/*  */
+
+.main-wrapper {
+    width: 100%;
+    background-color: #FFFFFF;
+    position: relative;
+
+
+}
+
+.testimonial-wrapper {
+    width: 1504px;
+    height: 386px;
+    margin: 240px auto 0;
+    border: 1px solid black;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.testimonial-wrapper > h2 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 90px;
+    color: #373737;
+    margin: 0;
+}
+
+.testimonial-content-wrapper {
+    width: 1504px;
+    height: 264px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content-item {
+    width: 480px;
+    height: 100%;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.content-item > .people-item {
+    width: 480px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+}
+
+
