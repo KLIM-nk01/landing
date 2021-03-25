@@ -82,6 +82,7 @@ header {
 
 
 .options > button {
+    position: relative;
     width: 166px;
     height: 48px;
     border: 2px solid #FFD703;
@@ -93,6 +94,13 @@ header {
     text-decoration: none;
     cursor: pointer;
 
+}
+
+.options > button:after {
+    content: url("./assets/icon-btn.png");
+    position: absolute;
+    top: 10px;
+    right: 30px;
 }
 
 .top-wrapper {
@@ -154,11 +162,24 @@ header {
 }
 
 .text-block > button {
+    position: relative;
     width: 299px;
     height: 79px;
     background: #FFD703;
     border-radius: 50px;
     border: none;
+
+    font-size: 22px;
+    line-height: 33px;
+    text-transform: uppercase;
+    color: #2C2C2C;
+}
+
+.text-block > button:after {
+    content: url("./assets/Get file.png");
+    position: absolute;
+    top: 20px;
+    right: 40px;
 }
 
 .top-first-frame > .play-block {
@@ -172,7 +193,7 @@ header {
 .subtract {
     width: 134px;
     height: 134px;
-    background-image: url("./assets/Subtract.png");
+    background-image: url("./assets/play.png");
     background-size: 100%;
     margin-left: 95px;
     cursor: pointer;
@@ -553,6 +574,7 @@ header {
     margin: 0 0 104px 32px;
     padding: 32px 64px;
 }
+
 .tabs-item {
     width: 696px;
     height: 170px;
@@ -584,6 +606,7 @@ header {
 }
 
 .function-wrapper > button {
+    position: relative;
     width: 158px;
     height: 48px;
     border-radius: 50px;
@@ -596,6 +619,13 @@ header {
     text-transform: uppercase;
 }
 
+.function-wrapper > button:after {
+    content: url("./assets/Flash.png");
+    position: absolute;
+    top: 12px;
+    right: 30px;
+}
+
 .pagination {
     width: 88px;
     height: 16px;
@@ -603,6 +633,7 @@ header {
     align-items: center;
     justify-content: space-between;
 }
+
 .pagination-item {
     width: 8px;
     height: 8px;
@@ -622,7 +653,7 @@ header {
     border: 2px solid #FFD703;
 }
 
-.arrow{
+.arrow {
     width: 112px;
     height: 48px;
     display: flex;
@@ -693,7 +724,6 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border: 1px solid black;
 }
 
 .wrapper-top {
@@ -731,6 +761,7 @@ header {
 }
 
 .wrapper-top > button {
+    position: relative;
     width: 373px;
     height: 79px;
     background: #FFD703;
@@ -743,6 +774,13 @@ header {
     line-height: 33px;
     text-transform: uppercase;
     color: #2C2C2C;
+}
+
+.wrapper-top > button:after {
+    content: url("./assets/Get file.png");
+    position: absolute;
+    top: 20px;
+    right: 40px;
 }
 
 .team-content {
@@ -800,20 +838,265 @@ header {
 .button-items {
     width: 46px;
     height: 46px;
-    background-color: #3FC2BB;
     border-radius: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
-.button-items > img {
-    width: 23px;
-    height: 23px;
+.button-items:hover {
+    width: 46px;
+    height: 46px;
+}
+
+.inst {
+    background-image: url("./assets/Subtract.png");
+}
+
+.telegram {
+    background-image: url("./assets/Telegram.png");
+}
+
+.in {
+    background-image: url("./assets/in.png");
+}
+
+.main-bottom-wrapper {
+    box-sizing: border-box;
+    width: 1920px;
+    height: 662px;
+    margin: 240px auto 0;
+    position: relative;
+    background: linear-gradient(180deg, #28AEB4 0%, #40c9c4 100%);
+    padding-top: 155px;
+    box-sizing: border-box;
+    padding-right: 25px;
+
+}
+
+.main-bottom-content {
+    width: 1078px;
+    height: 352px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.bottom-text {
+    width: 1078px;
+    height: 202px;
+    text-align: center;
+}
+
+.bottom-text > h2 {
+    margin: 0;
+    font-size: 106px;
+    line-height: 130%;
+    color: #FFFFFF;
+}
+
+.bottom-text > p {
+    width: 610px;
+    margin: 16px auto 0;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.1px;
+    color: #FFFFFF;
+}
+
+.input {
+    width: 486px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.input > input {
+    box-sizing: border-box;
+    width: 312px;
+    height: 50px;
+    background: #FFFFFF;
+    border: none;
+    border-radius: 50px;
+    padding: 16px 146px 16px 34px;
+    font-size: 12px;
+    line-height: 18px;
+    color: #CCCCCC;
+}
+
+.input > button {
+    position: relative;
+    width: 158px;
+    height: 48px;
+    background: #FFD703;
+    border-radius: 50px;
+    font-size: 14px;
+    line-height: 21px;
+    color: #2C2C2C;
+    text-transform: uppercase;
+    border: none;
+}
+
+.input > button:after {
+    content: url("./assets/Flash.png");
+    position: absolute;
+    top: 12px;
+    right: 30px;
+}
+.bottom-social-btn {
+    width: 123px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bottom-input {
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+}
+
+.be {
+    background-image: url("./assets/be.png");
+}
+
+.brous {
+    background-image: url("./assets/brous.png");
+}
+
+.instagram {
+    background-image: url("./assets/inst.png");
 }
 
 
 footer {
+    box-sizing: border-box;
     width: 1920px;
-    height: 662px;
+    height: 315px;
+    background: #0B514D;
+    padding-top: 38px;
+    padding-right: 20px;
+}
+
+.footer-wrapper {
+    width: 1504px;
+    height: 235px;
+    box-sizing: border-box;
+    margin: 0 auto 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-top {
+    width: 1504px;
+    height: 152px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-links {
+    width: 960px;
+    height: 139px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-links-item {
+    width: 181px;
+    height: 139px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-links-item > h3 {
+    margin: 0;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #F4F4F4;
+}
+
+.footer-links-item > a {
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.75px;
+    text-transform: uppercase;
+    color: #38B7AF;
+    text-decoration: none;
+}
+
+.newsletter {
+    width: 494px;
+    height: 152px;
+    display: flex;
+    flex-direction: column;
+}
+
+.newsletter > h3 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #F4F4F4;
+    margin: 0;
+}
+
+.newsletter > p {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    color: #CEFFFD;
+    margin: 0;
+}
+.newsletter > span {
+    font-size: 12px;
+    line-height: 18px;
+    color: #FFFFFF;
+    margin: 16px 0;
+}
+
+
+.footer-input > input {
+    box-sizing: border-box;
+    width: 312px;
+    height: 50px;
+    background: #FFFFFF;
+    border: none;
+    border-radius: 50px;
+    padding: 16px 146px 16px 34px;
+    font-size: 12px;
+    line-height: 18px;
+    color: #CCCCCC;
+}
+
+.footer-input > button {
+    position: relative;
+    width: 166px;
+    height: 48px;
+    border: 2px solid #FFD703;
+    box-sizing: border-box;
+    border-radius: 50px;
+    background-color: transparent;
+
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #FFD703;
+    cursor: pointer;
+
+}
+
+.footer-input > button:after {
+    content: url("./assets/icon-btn.png");
+    position: absolute;
+    top: 10px;
+    right: 30px;
 }
